@@ -1,3 +1,4 @@
+use reqwest;
 use rocket::serde::json::Json;
 use rusqlite::*;
 
@@ -109,4 +110,12 @@ pub fn delete_todo_item(id: i64) -> Result<Json<data::StatusMessage>, String> {
     }
     Err(_) => Err("Failed to insert todo item!".into()),
   }
+}
+
+#[get("/json")]
+pub async fn json() -> Result<Json<String>, String> {
+  let resp = reqwest::get("https://jsonplaceholder.typicode.com/todos").await;
+  println!("{:?}", resp);
+
+  Ok(Json(String::from("Hello, World!")))
 }
