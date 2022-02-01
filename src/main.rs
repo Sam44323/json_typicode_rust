@@ -13,11 +13,11 @@ fn rocket() -> _ {
     rocket::build().mount(
         "/api",
         routes![
-            routes::json,
             routes::index,
             routes::fetch_all_todo_items,
             routes::add_todo_item,
             routes::delete_todo_item,
+            routes::json_data,
         ],
     )
 }

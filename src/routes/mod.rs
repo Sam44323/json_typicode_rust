@@ -113,9 +113,9 @@ pub fn delete_todo_item(id: i64) -> Result<Json<data::StatusMessage>, String> {
 }
 
 #[get("/json")]
-pub async fn json() -> Result<Json<String>, String> {
+pub async fn json_data() -> Result<String, String> {
   let resp = reqwest::get("https://jsonplaceholder.typicode.com/todos").await;
-  println!("{:?}", resp);
+  println!("Data {:#?}", resp);
 
-  Ok(Json(String::from("Hello, World!")))
+  Ok("nice".into())
 }

@@ -15,3 +15,11 @@ pub struct ToDoItem {
 pub struct StatusMessage {
   pub message: String,
 }
+
+#[derive(Serialize)]
+pub struct JSONData {
+  userId: i32,
+  id: i32,
+  title: String,
+  completed: bool,
+}
