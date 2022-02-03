@@ -1,6 +1,6 @@
-# Server implementation with rocket
+# Json typicode implementation using rust
 
-_Server implementation code with rocket_
+_Json-typicode server implementation code with rocket_
 
 ![Rust](https://img.shields.io/badge/-Rust-333333?style=for-the-badge&logo=rust&logoColor=61dbfb)
 
@@ -11,6 +11,7 @@ _Server implementation code with rocket_
 - Rust
 - Rusqlite
 - Rocket
+- Reqwest
 - Serde
 - Cargo
 - Serde_json
@@ -24,7 +25,7 @@ _Wanna-contribute? Cool! Fork the repo and run the scripts for server_
 ### Cloning the repo
 
 ```bash
-git clone https://github.com/Sam44323/server_impl_rocket.git
+git clone https://github.com/Sam44323/json_typicode_rust.git
 ```
 
 ---
