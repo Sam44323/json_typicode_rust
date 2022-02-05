@@ -1,6 +1,6 @@
 # Json typicode implementation using rust
 
-_Json typicode server implementation code with rocket_
+_Json typicode server implementation for rust code with rocket_
 
 ![Rust](https://img.shields.io/badge/-Rust-333333?style=for-the-badge&logo=rust&logoColor=61dbfb)
 
